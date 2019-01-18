@@ -22,6 +22,7 @@
 		B8C5492021F2089F00428C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8C5492321F2089F00428C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8C5492521F2089F00428C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8C5492B21F2099C00428C4D /* UniversalLinksExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinksExample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		B8C5491821F2089E00428C4D /* UniversalLinksExample */ = {
 			isa = PBXGroup;
 			children = (
+				B8C5492B21F2099C00428C4D /* UniversalLinksExample.entitlements */,
 				B8C5491921F2089E00428C4D /* AppDelegate.swift */,
 				B8C5491B21F2089E00428C4D /* ViewController.swift */,
 				B8C5491D21F2089E00428C4D /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					B8C5491521F2089E00428C4D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksExample/UniversalLinksExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B524284DDA;
 				INFOPLIST_FILE = UniversalLinksExample/Info.plist;
@@ -301,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksExample/UniversalLinksExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B524284DDA;
 				INFOPLIST_FILE = UniversalLinksExample/Info.plist;
