@@ -12,6 +12,7 @@
 		B8C5491F21F2089E00428C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C5491D21F2089E00428C4D /* Main.storyboard */; };
 		B8C5492121F2089F00428C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C5492021F2089F00428C4D /* Assets.xcassets */; };
 		B8C5492421F2089F00428C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C5492221F2089F00428C4D /* LaunchScreen.storyboard */; };
+		B8C5492C21F2123900428C4D /* UniversalLinksExample.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = B8C5492B21F2099C00428C4D /* UniversalLinksExample.entitlements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C5492C21F2123900428C4D /* UniversalLinksExample.entitlements in Resources */,
 				B8C5492421F2089F00428C4D /* LaunchScreen.storyboard in Resources */,
 				B8C5492121F2089F00428C4D /* Assets.xcassets in Resources */,
 				B8C5491F21F2089E00428C4D /* Main.storyboard in Resources */,
