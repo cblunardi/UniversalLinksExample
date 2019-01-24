@@ -23,14 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
-            let incomingURL = userActivity.webpageURL,
-            let components = NSURLComponents(url: incomingURL, resolvingAgainstBaseURL: true),
-            let path = components.path else {
+            let incomingURL = userActivity.webpageURL else {
                 return false
         }
-        
-        print("path = \(path)")
-        ViewController.configure(link: path)
+
+        print("path = \(incomingURL.absoluteString)")
+        ViewController.configure(link: incomingURL.absoluteString)
         return true
     }
 }
